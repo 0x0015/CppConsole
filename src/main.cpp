@@ -1,17 +1,12 @@
 #include <iostream>
+#include "file.h"
+#include "compile.hpp"
+#include "file.hpp"
+#include "customCommands.hpp"
+
 using namespace std;
 
-extern FILE* openFile(const char* name, const char* params);
-extern void appendToFile(FILE* file, const char* text);
-extern void closeFile(FILE* file);
-	
-extern void compile(string filename);
-extern void compileRun(string filename);
-extern string formatForCommands(string includes, string variables, string commands, string functions);
 
-extern void removeDirectory(string directory);
-
-extern bool checkCommand(string* command, string* includes, string* variables, string* functions);
 
 int main() {
 	string str;

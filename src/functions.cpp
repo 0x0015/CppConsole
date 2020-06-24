@@ -1,14 +1,9 @@
 #include <iostream>
+#include "textHelper.hpp"
+#include "flowLogic.hpp"
+#include "customCommands.hpp"
 
 using namespace std;
-
-extern bool beginsWith(string source, string substring);
-extern bool stringContains(string source, string substring);
-extern int countFreq(const string pat, const string txt);
-
-extern void bracket(string* command);
-
-extern bool beginsWithInitializer(string command);
 
 void addFunction(string* command, string* functions){
 	string tempcmd = "";

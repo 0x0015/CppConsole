@@ -1,7 +1,10 @@
 #include <iostream>
+#include "file.hpp"
+#include "file.h"
+
 using namespace std;
 
-extern bool fileExists(const char* fname);
+
 
 void compile(string filename) {
 	string command;

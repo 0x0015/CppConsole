@@ -1,13 +1,9 @@
 #include <iostream>
+#include "textHelper.hpp"
+#include "flowLogic.hpp"
+#include "functions.hpp"
+
 using namespace std;
-
-extern bool beginsWith(string source, string substring);
-extern bool stringContains(string source, string substring);
-extern int countFreq(const string pat, const string txt);
-
-extern void bracket(string* command);
-
-extern void addFunction(string* command, string* functions);
 
 bool beginsWithInitializer(string command);
 
