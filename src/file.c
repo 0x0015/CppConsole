@@ -50,10 +50,10 @@ void closeFile(FILE* file) {
 	fclose(file);
 }
 
-bool fileExists(const char* fname){
+bool fileExists(const char* fname) {
 	if( access( fname, F_OK ) != -1 ) {
-    return(true);
-} else {
-    return(false);
-}
+		return(true);
+	} else {
+		return(false);
+	}
 }

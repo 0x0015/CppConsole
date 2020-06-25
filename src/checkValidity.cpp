@@ -4,20 +4,20 @@
 using namespace std;
 
 
-bool validLine(string command){
-	if(command.back() == ";"){
+bool validLine(string command) {
+	if(command.back() == ";") {
 		return(true);
 	}
-	if(command.back() == "{"){
+	if(command.back() == "{") {
 		return(true);
 	}
-	if(command.back() == "("){
+	if(command.back() == "(") {
 		return(true);
 	}
-	if(command.back() == "}"){
+	if(command.back() == "}") {
 		return(true);
 	}
-	if(command.back() == ")"){
+	if(command.back() == ")") {
 		return(true);
 	}
 	return(false);

@@ -17,9 +17,9 @@ void compileRun(string filename) {
 	compile(filename);
 	string command;
 	command = filename + ".out";
-	if(fileExists(command.c_str())){
-	system(command.c_str());
-	}else{
+	if(fileExists(command.c_str())) {
+		system(command.c_str());
+	} else {
 		//cout<<"Error"<<endl;
 	}
 	//cout<<command<<endl;
