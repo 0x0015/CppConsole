@@ -52,5 +52,8 @@ bool beginsWithInitializer(string command){
 	if(beginsWith(command, "signed ")){
 		return(true);
 	}
+	if(beginsWith(command, "auto ")){
+		return(true);
+	}
 	return(false);
 }
