@@ -2,6 +2,7 @@
 #include "textHelper.hpp"
 #include "flowLogic.hpp"
 #include "functions.hpp"
+#include "types.hpp"
 
 using namespace std;
 
@@ -42,42 +43,3 @@ bool checkCommand(string* command, string* includes, string* variables, string* 
 	return(true);
 }
 
-bool beginsWithInitializer(string command){
-	if(beginsWith(command, "int ")){
-		return(true);
-	}
-	if(beginsWith(command, "int* ")){
-		return(true);
-	}
-	if(beginsWith(command, "string ")){
-		return(true);
-	}
-	if(beginsWith(command, "string* ")){
-		return(true);
-	}
-	if(beginsWith(command, "float ")){
-		return(true);
-	}
-	if(beginsWith(command, "float* ")){
-		return(true);
-	}
-	if(beginsWith(command, "char ")){
-		return(true);
-	}
-	if(beginsWith(command, "char* ")){
-		return(true);
-	}
-	if(beginsWith(command, "double ")){
-		return(true);
-	}
-	if(beginsWith(command, "double* ")){
-		return(true);
-	}
-	if(beginsWith(command, "void ")){
-		return(true);
-	}
-	if(beginsWith(command, "void* ")){
-		return(true);
-	}
-	return(false);
-}
